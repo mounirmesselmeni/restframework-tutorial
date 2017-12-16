@@ -1,0 +1,16 @@
+media/
+static/
+*.mo
+*.pyc
+*.pyo
+*.swo
+*.swp
+*.swn
+.idea/
+.vscode
+.DS_Store
+ehthumbs.db
+Icon?
+Thumbs.db
+*~
+*.sqlite3
