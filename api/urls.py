@@ -1,13 +1,14 @@
 from django.conf.urls import url, include
-from rest_framework.routers import DefaultRouter
+from rest_framework_extensions.routers import ExtendedDefaultRouter
 from rest_framework.authtoken.views import obtain_auth_token
 
 from . import views
 
-router = DefaultRouter()
-router.register(r'teachers', views.TeacherViewSet)
+router = ExtendedDefaultRouter()
+router.register(r'teachers', views.TeacherViewSet).register(
+    r'courses', views.CourseViewSet, base_name='courses', parents_query_lookups=['teacher'],
+)
 router.register(r'students', views.StudentViewSet)
-router.register(r'courses', views.CourseViewSet)
 
 urlpatterns = [
     url(r'^', include(router.urls)),

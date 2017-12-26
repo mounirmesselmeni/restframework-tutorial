@@ -16,3 +16,4 @@ django = "*"
 djangorestframework = "*"
 django-filter = "==2.0.0.dev1"
 python-dateutil = "*"
+drf_extensions = {git = "https://github.com/chibisov/drf-extensions.git", ref = "master"}
