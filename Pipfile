@@ -8,6 +8,7 @@ name = "pypi"
 [dev-packages]
 
 ipython = "*"
+django-extensions = "*"
 
 
 [packages]
@@ -16,4 +17,4 @@ django = "*"
 djangorestframework = "*"
 django-filter = "==2.0.0.dev1"
 python-dateutil = "*"
-drf_extensions = {git = "https://github.com/chibisov/drf-extensions.git", ref = "master"}
+drf-extensions = {git = "https://github.com/chibisov/drf-extensions.git", ref = "master"}
